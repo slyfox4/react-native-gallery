@@ -276,7 +276,7 @@ export default class Gallery extends Component {
     return (
       <Image
         {...other}
-        onLoadStart={() => this.setImageLoaded(pageId)}
+        onLoad={() => this.setImageLoaded(pageId)}
         onViewTransformed={((transform) => {
            onViewTransformed && onViewTransformed(transform, pageId);
         }).bind(this)}
